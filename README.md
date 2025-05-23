@@ -1,7 +1,7 @@
-INFT 1206
+# INFT 1206
 
-Prof. Jennifer Short
+## Prof. Jennifer Short
 
-Matthew Flores - 100624787
+### Matthew Flores - 100624787
 
 Welcome to my Web Dev Fundamentals GitHub Repo!
