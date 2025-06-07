@@ -3,7 +3,8 @@ Name: Matthew Flores 100624787
 File: index.html
 Date: 6 June 2025
 Desc: HTML Assignment 2 Part 1
-Validated via https://validator.w3.org/#validate_by_upload
+
+Note: For assistance with <picture> element: https://www.w3schools.com/html/html_images_picture.asp
 -->
 
 <!DOCTYPE html>
@@ -109,11 +110,12 @@ Validated via https://validator.w3.org/#validate_by_upload
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+      <img src="400x400firefox_logo-only_RGB.jpg" alt="Firefox logo" >
     </header>
 
     <main>
       <article>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=5AWvt7qGGe5nj0Ua" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <!-- insert iframe from youtube -->
 
         <h2>Rocking the free web</h2>
@@ -125,23 +127,27 @@ Validated via https://validator.w3.org/#validate_by_upload
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+        <a href="https://www.mozilla.org/en-US/firefox/new/" >
+          <img srcset="400x400firefox_logo-only_RGB.jpg 400w, firefox_logo-only_RGB.png 1200w" sizes="(max-width: 400px) 400px, 1200px" src="400x400firefox_logo-only_RGB.jpg" alt="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="400x400mozilla-dinosaur-head.jpg 400w, mozilla-dinosaur-head.png 1200w" sizes="(max-width: 400px) 400px, 1200px" src="400x400mozilla-dinosaur-head.jpg" alt="Mozilla logo">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="400x400firefox-addons.jpg 400w, firefox-addons.jpg 300w" sizes="(max-width: 400px) 300px, 400px" src="400x400firefox-addons.jpg" alt="Firefox Add-ons image">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="mdn.svg" alt="Mozilla Developer Network logo">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(min-width: 1600px)" srcset="red-panda.jpg">
+          <img src="1200red-panda.jpg" alt="A photo of a red panda">
+        </picture>
       </div>
 
     </main>
