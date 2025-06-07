@@ -33,3 +33,20 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+
+.namecoltop{
+  border-top: 5px solid rgb(0,0,0);
+  border-left: 5px solid rgb(0,0,0);
+  border-right: 5px solid rgb(0,0,0);
+}
+
+.namecol{
+  border-left: 5px solid rgb(0,0,0);
+  border-right: 5px solid rgb(0,0,0);
+}
+
+.namecolbottom{
+  border-left: 5px solid rgb(0,0,0);
+  border-right: 5px solid rgb(0,0,0);
+  border-bottom: 5px solid rgb(0,0,0);
+}
