@@ -47,31 +47,98 @@ header, footer {
 /* WRITE YOUR CODE BELOW HERE */
 
 /* Fonts: https://www.1001fonts.com/greater-theory-font.html
-          https://www.1001fonts.com/agraham-font.html
+          https://www.1001fonts.com/wasted-vindey-font.html
 
-Font face generator: https://www.infyways.com/tools/font-face-generator/ */
+Font face generator: https://transfonter.org/ */
 
 @font-face {
-  font-family: 'Agraham';
-  font-display: swap;
-  src: local('Agraham'),
-       url('Agraham.otf') format('opentype'),
-       url('Agraham.woff') format('woff'),
-       url('Agraham.woff2') format('woff2');
-  /* Fallback font stack */
-  /* font-family: 'Agraham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; */
+    font-family: 'Wasted Vindey';
+    src: local('Wasted Vindey'), local('WastedVindeyRegular'),
+        url('WastedVindeyRegular.woff2') format('woff2'),
+        url('WastedVindeyRegular.woff') format('woff'),
+        url('WastedVindeyRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+
+
 @font-face {
-  font-family: 'Agraham';
-  font-display: swap;
-  src: local('Agraham'),
-       url('Agraham.otf') format('opentype'),
-       url('Agraham.woff') format('woff'),
-       url('Agraham.woff2') format('woff2'),
-       url('GreaterTheory.otf') format('opentype'),
-       url('GreaterTheory.woff') format('woff'),
-       url('GreaterTheory.woff2') format('woff2');
-  /* Fallback font stack */
-  /* font-family: 'Agraham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; */
+    font-family: 'Greater Theory';
+    src: local('Greater Theory'), local('GreaterTheoryRegular'),
+        url('GreaterTheoryRegular.woff2') format('woff2'),
+        url('GreaterTheoryRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+  font-size: 10px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  font-family: 'Wasted Vindey',serif;
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-family: 'Greater Theory',sans-serif;
+}
+
+h2{
+  font-size:1.8rem;
+  letter-spacing: 1.5px;
+  font-family: 'Greater Theory',sans-serif;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+section > h2+p{
+  text-indent: 20px;
+} /* Via: https://drafts.csswg.org/selectors/#combinators */
+
+a{
+  color: cyan;
+}
+
+a:visited{
+  color: red;
+}
+
+a:focus{
+  color: green;
+  outline: none; /* Via: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
+}
+
+a:hover{
+  color: orange;
+  text-decoration: none;
+}
+
+a:active{
+  font-size: 2rem;
+}
+
+
+section p>a::after{
+  content:url(external-link-52.png); /* Via: https://www.w3schools.com/cssref/sel_after.php */
+}
+
+li{
+  line-height: 20px;
+  list-style-type: square;
+}
+
+nav li{
+  text-align: center;
+  border: 5px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
