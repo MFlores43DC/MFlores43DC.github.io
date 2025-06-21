@@ -6,5 +6,22 @@ html {
 div {
     width: 200px;
     height: 200px;
-    text-align: center;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center; /* Via: https://www.w3schools.com/csS/css_align.asp */
+    font-size: 1.125rem;
+    /*
+        Calculation: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+        According to above resource
+        Base font size (1rem) = 16px
+        Proportionally, 1.125rem = 18px
+    */
+    background-color: #00fff2;
+    color: #ff0077;
+    text-shadow: 20px 20px black; /* Via: https://www.w3schools.com/css/css_text_shadow.asp */
+    border-radius: 15px;
+    border: 1px solid #008881;
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0)0%, rgba(0,0,0,0.2)30%, rgba(0,0,0,0.2)100%); /* Via: https://www.w3schools.com/css/css3_gradients.asp */
+    box-shadow: 10px 10px, 10px 10px rgba(255, 255, 255, 0.452) inset, -10px -10px rgba(0,0,0,0.452) inset; /* Via: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 }
