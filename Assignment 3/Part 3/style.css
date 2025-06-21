@@ -45,3 +45,33 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Fonts: https://www.1001fonts.com/greater-theory-font.html
+          https://www.1001fonts.com/agraham-font.html
+
+Font face generator: https://www.infyways.com/tools/font-face-generator/ */
+
+@font-face {
+  font-family: 'Agraham';
+  font-display: swap;
+  src: local('Agraham'),
+       url('Agraham.otf') format('opentype'),
+       url('Agraham.woff') format('woff'),
+       url('Agraham.woff2') format('woff2');
+  /* Fallback font stack */
+  /* font-family: 'Agraham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; */
+}
+
+@font-face {
+  font-family: 'Agraham';
+  font-display: swap;
+  src: local('Agraham'),
+       url('Agraham.otf') format('opentype'),
+       url('Agraham.woff') format('woff'),
+       url('Agraham.woff2') format('woff2'),
+       url('GreaterTheory.otf') format('opentype'),
+       url('GreaterTheory.woff') format('woff'),
+       url('GreaterTheory.woff2') format('woff2');
+  /* Fallback font stack */
+  /* font-family: 'Agraham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; */
+}
