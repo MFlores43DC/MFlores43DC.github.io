@@ -3,6 +3,7 @@ Name: Matthew Flores 100624787
 File: index.html
 Date: 18 July 2025
 Desc: HTML Assignment 4 Part 3 - JavaScript
+Validated via https://validator.w3.org/#validate_by_upload
 -->
 
 <!DOCTYPE html>
@@ -14,117 +15,33 @@ Desc: HTML Assignment 4 Part 3 - JavaScript
   </head>
 
   <body>
-    <h1>Matthew Flores</h1>
-    <p>2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
-    <p>(100)-624-7870</p>
-    <p>matthew.flores@dcmail.ca</p>
-    
-    <h2>Objectives</h2>
-    <ul>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        </li>
-    </ul>
-   
-    <h2>Skills</h2>
-    <ul>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        </li>
-    </ul>
+    <div class="content">
+      <img src="profilepicture.jpg" alt="Profile Picture">
+      <h1>Matthew Flores</h1>
 
-    <h2>Work Experience</h2>
-    <ol>
-        <li>
-            <p><strong>Work Experience</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Work Experience</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-            </ul>
-        </li>
-    </ol>
+      <div class="contact-info">
+        <p><img src="address.png" alt="Address Icon" class="icon">63 Ryder Crescent, Ajax, ON L1Z 1X9</p>
+        <p><img src="phone.png" alt="Phone Icon" class="icon">Cell: (647) 993-4398</p>
+        <p><img src="email.png" alt="Email Icon" class="icon">mtthwflores@gmail.com</p>
+        <!--Icons from https://icon-library.com/icon/phone-email-address-icon-3.html-->
+      </div>
 
-    <h2>Volunteer Experience</h2>
-    <ol>
-        <li>
-            <p><strong>Volunteer Experience</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Volunteer Experience</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Volunteer Experience</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                </li>
-            </ul>
-        </li>
-    </ol>
+      <h2>Objectives</h2>
+      <p>To be part of a workplace where I can learn new skills and further develop my existing skills to contribute to the organization's success.</p>
+     
+      <h2 id="skills-heading" class="clickable-header unclicked">Skills ></h2>
+      <div id="skills" class="expandable-container"></div>
 
-    <h2>Educational Background</h2>
-    <ol>
-        <li>
-            <p><strong>Education</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-            </ul>
-        </li>
-        <li>
-            <p><strong>Education</strong></p>
-            Start Date to End Date
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-            </ul>
-        </li>
-    </ol>
-    
+      <h2 id="work-heading" class="clickable-header unclicked">Work Experience ></h2>
+      <div id="work-experience" class="expandable-container"></div>
+
+      <h2 id="volunteer-heading" class="clickable-header unclicked">Volunteer Experience ></h2>
+      <div id="volunteer-experience" class="expandable-container"></div>
+
+      <h2 id="education-heading" class="clickable-header unclicked">Educational Background ></h2>
+      <div id="education" class="expandable-container"></div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>

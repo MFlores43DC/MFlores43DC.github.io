@@ -1,0 +1,47 @@
+/*Validated by https://jigsaw.w3.org/css-validator/#validate_by_upload*/
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+
+.expandable-container{
+    text-align: left;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Clickable headers */
+.clickable-header {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+.clickable-header:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.clickable-header:active {
+  color: orange;
+}
+
+.clicked {
+  color: purple;
+}
