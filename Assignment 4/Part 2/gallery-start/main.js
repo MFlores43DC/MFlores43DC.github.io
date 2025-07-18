@@ -1,3 +1,7 @@
+/* Validated via https://www.minifier.org/javascript-validator 
+External resources used: https://www.youtube.com/watch?v=nKfc1j4PrOk&list=PL41tKSPrUfiwXWjX8luvZizILnf7vv7Rs&index=6
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 

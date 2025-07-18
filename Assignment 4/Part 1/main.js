@@ -1,4 +1,6 @@
-// Validated via https://www.minifier.org/javascript-validator
+/* Validated via https://www.minifier.org/javascript-validator 
+External resources used: https://www.youtube.com/watch?v=Ul50MLZwMz8&list=PL41tKSPrUfiwXWjX8luvZizILnf7vv7Rs&index=6
+*/
 
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
